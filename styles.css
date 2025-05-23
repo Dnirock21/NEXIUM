@@ -1,0 +1,266 @@
+/**
+body {
+  font-family: 'Roboto', sans-serif;
+}**/
+
+@font-face{
+  font-family: 'NexiumText';
+
+  src: url('/fonts/Nunito-SemiBold.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'NexiumText';
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+@font-face{
+  font-family: 'NexiumTitle';
+
+  src: url('/fonts/Ethnocentric-Italic.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.encabezado-contenido{
+
+  font-family: 'NexiumTitle';
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.encabezado-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo-circular {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.encabezado-contenido h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 0;
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+.imagen-con-texto {
+  padding: 40px 20px;
+  text-align: justify;
+  
+}
+
+.contenedor-imagen-texto {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  width: 800px;
+  
+}
+
+.contenedor-imagen-texto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  padding: 0px 100px 20px 0px;
+}
+
+.texto-superpuesto h2 {
+  margin: 0 0 10px;
+}
+
+.texto-superpuesto p {
+  margin: 0;
+}
+.banner-slider {
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-slider .slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider-container {
+  margin: 0; 
+  padding: 0;
+  position: relative;
+}
+
+.imagenes-lado-a-lado {
+  display: flex;
+  justify-content: center;     
+  gap: 80px;                   
+  flex-wrap: wrap;             
+  padding: 20px;
+}
+
+.imagenes-lado-a-lado img {
+  margin-bottom: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+.video-con-texto {
+  margin-top: 50px;
+  padding: 0px 0px;
+}
+
+.contenedor-video-texto {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contenedor-video-texto video {
+  height: 500px; 
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.texto-al-lado {
+  max-width: 400px;
+  font-size: 1rem;
+}
+.bloques-con-icono {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+
+  background-image: url('imagenes/fondo-redes.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  border-radius: 20px;      
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.bloque {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f1f1f1;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bloque img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.bloque p {
+  margin: 0;
+  font-size: 1rem;
+}
+.bloques-con-icono a {
+  color: black; 
+  text-decoration: none; 
+}
+
+.bloques-con-icono a:hover {
+  text-decoration: underline; 
+}
